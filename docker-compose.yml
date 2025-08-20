@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  myapp:
+    image: themark45/todo:latest   # Replace with your Docker Hub repo
+    container_name: todo
+    ports:
+      - "3000:3000"  # map container port to host
+    restart: always   # auto-restart if server restarts
+
